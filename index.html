@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <!-- Aqui serão definidas todas as "características principais" do site. 
+             O tamanho da janela, se funcionará em mobile, como se dará a codificação de elementos (charset), 
+             definição de qual linguagem utilizar para a estilização (nesse caso, css),
+             entre outras.-->
+
+        <title>Rodrigo Orlandi - Portfólio</title>
+             <!-- Título da página em si.-->
+
+        <meta charset = "utf-8" />
+             <!-- A tag <meta> define um tipo de informação global para o site. "charset" indica o formato de codificação.
+             utf-8 permite a leitura e programação de documentos em qualquer idioma.-->
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />     
+            <!-- A definição acima permite a visualização de conteúdo no celular ou em dispositivos móveis, com sua janela
+                 escalável e de tamanho inicial menor.-->
+
+
+        <link rel = "stylesheet" type = "text/css" href = "style.css" />
+             <!-- "rel" é o que indica a relação entre o documento interno (em html) e o externo (em css), com "stylesheet" representando o CSS,
+                 "type" é o tipo de documento linkado ao html
+                 "href", ou "hypertext reference", é aonde está e o nome do arquivo a ser linkado, nesse caso, "style.css". -->
+         
+        <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css?family=Oswald">
+
+        
+    
+        <style>
+
+         h2 {text-align: center;}
+
+        </style>
+        
+        <!-- COLOCAR ACIMA: h1 {text-align: center;}-->
+
+        <!--EXEMPLO: Style an element with the requested web font, either in a stylesheet: .css-selector { font-family: 'Font Name', serif; } or with an inline style on the element itself:
+        <div style="font-family: 'Font Name', serif;">Your text</div>c -->
+ </head>
+
+ <body>
+        <!-- Aqui que o site em si será estruturado.
+             Está dividido em diversas partes da composição do site, a começar pelo header,
+             e de o texto do site em si, assim como imagens e hyperlinks. -->
+
+        <header>
+
+            <ul class = "navbar">
+                <!-- A barra de navegação do site. É de uma classe previamente definida.-->
+                <li>
+                    <a href = "#intro"> Introdução</a>
+                </li>
+                    
+                <li>
+                    <a href = "#habil"> Sobre Mim</a>
+                </li>
+
+                <li>
+                    <a href = "#proj"> Projetos Desenvolvidos</a>
+                </li>
+
+            </ul>
+
+
+        </header>
+
+          <!--"Body do body"-->
+      
+         <section class = "Introdução" id = "intro">
+
+            <br>
+
+            <div class = "box">
+                 <img align="middle" src= "images/rodrigo.png" alt=""> 
+            </div>
+
+            <br>
+            <br>
+
+            <h1><u>Introdução</u></h1>
+                <p>Opa, tudo bom? Eu sou o Rodrigo, atualmente Trainee da Orc'estra, uma empresa júnior sediada na Faculdade do Gama (FGA). 
+                    Este Portfólio foi desenvolvido como parte do projeto de capacitação dentro do Processo Trainee da Orc'estra.</p>
+        
+        </section>
+
+        <section class = "Sobre Mim" id = "habil">
+
+            <h1><u>Sobre mim</u></h1>
+                <p>Sempre <i>ameeei</i> videogames, um fã desde que eu me tomo como gente. Persigo a área de engenharia de software justamente 
+                    por causa disso. Tenho um grande interesse em japonês também pelo mesmo hobby que mantenho até os dias de hoje.</p>
+
+                <div class = "box">
+                    <img align="middle" src= "images/hobbies.png" alt=""> 
+                </div>
+
+                <br>
+
+                <p>Dentre as habilidades que possuo, tenho um nível básico de conhecimento em Photoshop, e sou fluente em inglês. Cursando a FGA, também  
+                   desenvolvi algo de habilidades de liderança, e estou lentamente me capacitando na área de TI, tendo conhecimento em <b>C++, Python</b> e um pouco de <b>HTML</b>,
+                    aprendendo em matérias como Inteligência Humano-Computador (IHC), a qual é a área em que estou realizando Iniciação Científica.</p>
+
+                   <div class = "projects-container">
+                    <div class = "box">
+             
+                            <img src="images/lattes.jpg"> 
+        
+                        <h2>Meu Lattes</h2>
+                        <a href = "http://lattes.cnpq.br/6168243092497814" target="_blank" class = "btn"> Currículo Lattes</a> 
+                    </div>
+    
+                    <div class = "box">
+      
+                            <img src="images/insta.jpg"> 
+
+                        <h2>Meu Insta</h2>
+                        <a href = "https://instagram.com/rodri_no_orlandi?igshid=ZDdkNTZiNTM=" target="_blank" class = "btn"> Link ao Perfil do Instagram</a>
+                     </div>
+                    </div>
+
+        </section>
+
+
+        <section class = "Projetos Desenvolvidos" id = "proj">
+
+            <h1><u>Projetos Desenvolvidos</u></h1>
+                <p>Ao longo do curso realizado na FGA, desenvolvi principalmente dois projetos no GitHub, liderando dois dos grupos. Realizei alguns outros projetos pessoais,
+                    mas os de maior relevância profissional são os listados abaixo. Atualmente, por meio da Iniciação Científica, estou desenvolvendo uma pesquisa para poder 
+                    escrever um artigo, que pode ser visto no link ao Currículo Lattes acima.
+                </p>
+
+                        <br>
+                <a href = "https://github.com/Interacao-Humano-Computador/2022.2-PCDF" target="_blank" class = "btn"> Github - Projeto de IHC</a> <br>
+                        <br>
+                <a href = "https://github.com/DaviPierre/Git-de-Orienta-o-objetos" target="_blank" class = "btn"> Github - Projeto de OO</a> <br>
+                        <br>
+                <a href = "https://github.com/fga-eps-mds/2022-1-TiControla-FrontEnd" target="_blank" class = "btn"> Github - Projeto de MDS</a> <br>
+        
+        </section>
+
+                     
+
+     </body>
+
+</html>
